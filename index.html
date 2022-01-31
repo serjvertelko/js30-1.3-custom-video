@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="content__wrapper">
+        <header>
+            <div class="video__header">
+                <p class="video__header-text">Video</p>
+            </div>
+        </header>
+        <main>
+            <div class="video__content">
+                <video >
+                    <source src="./assets/video/video.mp4">
+                </video>
+            </div>
+        </main>
+        <footer>
+            <div class="video__footer">
+                <div class="video__footer-item">
+                    <div class="video__footer-copyright">&copy;</div>
+                    <div class="video__footer-year">2022</div>
+                    <div class="video__footer-github">
+                        <a href="https://github.com/" class="video__footer-githubLink" target="blank">github</a>
+                    </div>
+                </div>
+                <div class="video__footer-item">
+                    <a class="video__footer-rssLink" href="https://rs.school/" target="blank">Rolling Scopes School</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>

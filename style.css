@@ -1,0 +1,70 @@
+body {
+    background-color: #000;
+    font-family: "Merriweather", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content__wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.video {}
+
+.video__header {}
+
+.video__header-text {
+    width: 50%;
+    height: 80px;
+    font-size: 40px;
+    color: #bdae82;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 700;
+    color: #bdae82;
+}
+
+.video__content {}
+
+.video__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.video__footer-item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.video__footer-github {}
+
+.video__footer-githubLink,
+.video__footer-year,
+.video__footer-copyright {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+    line-height: 50px;
+}
+
+.video__footer-rssLink {
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    transition: 0.3s;
+}
