@@ -17,14 +17,17 @@ a {
     cursor: pointer;
 }
 
-.content__wrapper {
-    margin: 0 auto;
-    max-width: 1280px;
+button {
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
 }
 
-.video {}
+.content__wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
 
-.video__header {}
+}
 
 .video__header-text {
     width: 50%;
@@ -37,7 +40,29 @@ a {
     color: #bdae82;
 }
 
-.video__content {}
+.video__header-text::after,
+.video__header-text::before {
+    content: "";
+    display: inline-block;
+    background-color: #bdae82;
+    height: 3px;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.video__header-text::after {
+    margin-left: 20px;
+}
+
+.video__header-text::before {
+    margin-right: 20px;
+}
+
+.video__content {
+    position: relative;
+    max-width: 1440px;
+    border: 2px solid #bdae82;;
+}
 
 .video__footer {
     display: flex;
@@ -67,4 +92,68 @@ a {
     text-decoration: none;
     line-height: 50px;
     transition: 0.3s;
+}
+
+.video__content-playMainBtn-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video__content-playMainBtn-img {
+    width: 150px;
+    height: 150px;
+}
+
+.video__content-poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./assets/video-playerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.video__content-item {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.video__content-control {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1395px;
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 0.5;
+}
+
+.progress-bar {
+    max-width: 920px;
+    width: 100%;
+}
+
+.video__progress-control {
+    width: 100%;
+}
+
+.volum-control {
+    max-width: 230px;
+    width: 100%;
+}
+
+.audio__progress-control {
+    width: 100%;
 }
