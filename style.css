@@ -76,7 +76,7 @@ button {
     justify-content: flex-start;
 }
 
-.video__footer-github {}
+ 
 
 .video__footer-githubLink,
 .video__footer-year,
@@ -99,6 +99,13 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+ display: block;
+    transition: 0.5s;
+}
+.video__content-playMainBtn-itemActive{
+   display: none;
+    transition: 0.5s;
+ 
 }
 
 .video__content-playMainBtn-img {
@@ -115,7 +122,12 @@ button {
     background-size: cover;
     width: 100%;
     height: 100%;
-    display: none;
+    opacity: 1;
+    transition: 1.5s;
+}
+.video__content-posterActive{
+    opacity: 0;
+    transition: 1.5s;
 }
 
 .video__content-item {
@@ -138,6 +150,24 @@ button {
     padding-top: 10px;
     padding-bottom: 10px;
     opacity: 0.5;
+    display: none;
+}
+.video__content-controlActive{
+    display: flex;
+}
+.video__play-control{
+    width: 23px;
+    height: 30px;
+    background: url(./assets/svg/play.svg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.video__play-controlActive{
+    background: url(./assets/svg/pause.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .progress-bar {
@@ -156,4 +186,12 @@ button {
 
 .audio__progress-control {
     width: 100%;
+}
+.audio__play-controlaudio__play-control{
+ width: 36px;
+ height: 36px;
+background: url(./assets/svg/volume.svg);
+}
+.audio__play-controlaudio__play-controlActive{
+    background: url(./assets/svg/mute.svg);
 }
