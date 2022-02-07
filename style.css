@@ -22,7 +22,9 @@ button {
     cursor: pointer;
     border: none;
 }
-
+input{
+    cursor: pointer;
+}
 .content__wrapper {
     margin: 0 auto;
     max-width: 1440px;
