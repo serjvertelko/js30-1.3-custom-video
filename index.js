@@ -93,6 +93,13 @@ function progressUpdate() {
         videoPlayBtn.classList.remove("video__play-controlActive")
     }
 }
+randomCard()
+function randomCard() {
+    memoryCard.forEach(card => {
+        let ramdomPos = Math.floor(Math.random() * 12);
+        card.style.order = ramdomPos;
+    });
+}
 
 playVideoContentPlayMainBtnItem();
 playVideoBtn();
